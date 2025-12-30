@@ -86,7 +86,6 @@ button {
 .contacts a:hover,
 .contacts a:focus,
 .page-nav a:hover,
-.page-nav a:active,
 .page-nav a:focus {
   color: #404bbf;
 }
@@ -404,7 +403,7 @@ img {
 }
 .footer-container {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   gap: 120px;
 }
 .footer-social-box {
@@ -474,15 +473,20 @@ img {
 
 .page-nav-link {
   position: relative;
+  padding-bottom: 20px;
 }
 
-.link-after::after {
+.page-nav-link.is-active::after {
   content: "";
   border-radius: 2px;
   width: 100%;
   height: 4px;
+  position: absolute;
   background-color: #404bbf;
   position: absolute;
   left: 0;
   bottom: 0;
+}
+.page-nav .page-nav-link.is-active {
+  color: #404bbf;
 }
