@@ -329,6 +329,7 @@ img {
   align-items: flex-start;
 }
 .footer-logo {
+  display: block;
   margin-bottom: 16px;
 }
 .footer-text {
@@ -400,6 +401,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #ffffff;
 }
 .footer-container {
   display: flex;
@@ -473,7 +475,7 @@ img {
 
 .page-nav-link {
   position: relative;
-  padding-bottom: 20px;
+  padding: 24px 0;
 }
 
 .page-nav-link.is-active::after {
